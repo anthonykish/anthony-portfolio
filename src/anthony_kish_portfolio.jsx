@@ -5,26 +5,52 @@ import {
   FaDocker,
   FaGitAlt,
   FaLinux,
-  FaJava,
   FaCode,
   FaMicrochip,
   FaAws,
-  FaCss3Alt,
   FaGithub,
-  FaLinkedin
+  FaLinkedin,
+  FaDatabase,
+  FaServer,
+  FaBolt,
+  FaChartArea,
 } from "react-icons/fa";
 
 import {
-  SiDjango,
-  SiMysql,
-  SiPandas,
-  SiJenkins,
-  SiBootstrap,
+  SiTypescript,
   SiCplusplus,
   SiReact,
-  SiHtml5,
-  SiPytest
+  SiNextdotjs,
+  SiVite,
+  SiReactquery,
+  SiReactrouter,
+  SiReacthookform,
+  SiZod,
+  SiTailwindcss,
+  SiShadcnui,
+  SiRadixui,
+  SiFastapi,
+  SiDjango,
+  SiSqlalchemy,
+  SiPydantic,
+  SiCelery,
+  SiRedis,
+  SiPostgresql,
+  SiMysql,
+  SiSqlite,
+  SiRailway,
+  SiOpenai,
+  SiPandas,
+  SiPytest,
+  SiVitest,
+  SiTestinglibrary,
+  SiRuff,
+  SiPrecommit,
+  SiSentry,
+  SiRos,
 } from "react-icons/si";
+
+import { VscAzure } from "react-icons/vsc";
 
 export default function AnthonyKishPortfolio() {
   const navItems = [
@@ -35,99 +61,150 @@ export default function AnthonyKishPortfolio() {
     { label: "Contact", href: "#contact" },
   ];
 
-  const typingWords = ["Python", "HTML", "Django", "SQL", "AWS", "Full-Stack Systems", "Automation"];
+  const typingWords = ["React", "Next.js", "TypeScript", "FastAPI", "Azure", "AI Automation", "Full-Stack Systems"];
 
   const skillCategories = [
     {
       category: "Languages",
       skills: [
         { name: "Python", icon: <FaPython /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
         { name: "JavaScript", icon: <FaJs /> },
         { name: "C++", icon: <SiCplusplus /> },
         { name: "C", icon: <FaCode /> },
-        { name: "Java", icon: <FaJava /> },
-        { name: "SQL", icon: <FaCode /> },
+        { name: "SQL", icon: <FaDatabase /> },
       ],
     },
     {
-      category: "Web / Backend",
+      category: "Frontend",
       skills: [
-        { name: "Django", icon: <SiDjango /> },
         { name: "React", icon: <SiReact /> },
+        { name: "Next.js", icon: <SiNextdotjs /> },
+        { name: "Vite", icon: <SiVite /> },
+        { name: "TanStack Query", icon: <SiReactquery /> },
+        { name: "TanStack Router", icon: <SiReactrouter /> },
+        { name: "Zustand", icon: <FaBolt /> },
+        { name: "React Hook Form", icon: <SiReacthookform /> },
+        { name: "Zod", icon: <SiZod /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+        { name: "shadcn/ui", icon: <SiShadcnui /> },
+        { name: "Radix UI", icon: <SiRadixui /> },
+        { name: "Recharts", icon: <FaChartArea /> },
+      ],
+    },
+    {
+      category: "Backend",
+      skills: [
+        { name: "FastAPI", icon: <SiFastapi /> },
+        { name: "Django", icon: <SiDjango /> },
+        { name: "SQLAlchemy", icon: <SiSqlalchemy /> },
+        { name: "Alembic", icon: <FaServer /> },
+        { name: "Pydantic", icon: <SiPydantic /> },
+        { name: "Celery", icon: <SiCelery /> },
+        { name: "Redis", icon: <SiRedis /> },
+        { name: "Uvicorn", icon: <FaServer /> },
         { name: "REST APIs", icon: <FaCode /> },
-        { name: "HTML", icon: <SiHtml5 /> },
-        { name: "CSS", icon: <FaCss3Alt /> },
-        { name: "Bootstrap", icon: <SiBootstrap /> },
       ],
     },
     {
-      category: "Data / Infrastructure",
+      category: "Databases",
       skills: [
-        { name: "Pandas", icon: <SiPandas /> },
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
         { name: "MySQL", icon: <SiMysql /> },
-        { name: "Docker", icon: <FaDocker /> },
-        { name: "Jenkins", icon: <SiJenkins /> },
-        { name: "AWS", icon: <FaAws /> },
-        { name: "Linux", icon: <FaLinux /> },
-        { name: "Git", icon: <FaGitAlt /> },
-        { name: "Pytest", icon: <SiPytest /> },
+        { name: "SQLite", icon: <SiSqlite /> },
       ],
     },
     {
-      category: "Embedded / FPGA",
+      category: "Cloud / Infrastructure",
       skills: [
+        { name: "Azure", icon: <VscAzure /> },
+        { name: "AWS", icon: <FaAws /> },
+        { name: "Docker", icon: <FaDocker /> },
+        { name: "Railway", icon: <SiRailway /> },
+      ],
+    },
+    {
+      category: "AI / Data",
+      skills: [
+        { name: "OpenAI SDK", icon: <SiOpenai /> },
+        { name: "Pandas", icon: <SiPandas /> },
+      ],
+    },
+    {
+      category: "Testing / Tooling",
+      skills: [
+        { name: "Pytest", icon: <SiPytest /> },
+        { name: "Vitest", icon: <SiVitest /> },
+        { name: "React Testing Library", icon: <SiTestinglibrary /> },
+        { name: "Git", icon: <FaGitAlt /> },
+        { name: "Ruff", icon: <SiRuff /> },
+        { name: "pre-commit", icon: <SiPrecommit /> },
+        { name: "Sentry", icon: <SiSentry /> },
+      ],
+    },
+    {
+      category: "Embedded / Systems",
+      skills: [
+        { name: "Linux", icon: <FaLinux /> },
+        { name: "ROS2", icon: <SiRos /> },
         { name: "Verilog", icon: <FaMicrochip /> },
         { name: "VHDL", icon: <FaCode /> },
-        { name: "Vivado", icon: <FaMicrochip /> },
       ],
     },
   ];
 
   const projects = [
     {
-      title: "Clinical Data Web Platform (MARL)",
-      subtitle: "Full-stack web application",
+      title: "AI Billing Automation Platform",
+      subtitle: "Alai Partners · Document intelligence",
       description:
-        "Built a full-stack Django web application for clinical assessment data collection, reporting, and database management. Implemented autosave workflows, relational database design, Qualtrics data integration, secure magic-link authentication, and backend data processing pipelines.",
-      tags: ["Python", "Django", "MySQL", "JavaScript", "Pandas", "AWS"],
+        "Built end-to-end document-intelligence pipelines that automated 62% of client billing operations, processing 10,000+ invoices per month. Combined Azure Form Recognizer, the OpenAI SDK, and Celery/Redis background workers behind async FastAPI services, with a React/Next.js interface for review and workflow automation.",
+      tags: ["FastAPI", "Next.js", "TypeScript", "Azure", "OpenAI", "Celery / Redis", "PostgreSQL"],
     },
     {
-      title: "Swarm Search and Rescue Robotics System",
-      subtitle: "Robotics / distributed systems",
+      title: "Clinical Data Web Platform (MARL)",
+      subtitle: "Motion Analysis Research Lab · Full-stack",
       description:
-        "Developed a multi-robot swarm system using ROS2 and TurtleBots that collaboratively mapped environments using LiDAR, merged maps into a unified environment, performed object detection using Raspberry Pi cameras, and communicated with a central server through a web-based interface.",
-      tags: ["ROS2", "Linux", "Python", "Robotics", "Networking", "SLAM"],
+        "Built and maintained a full-stack Django clinical data platform supporting patient assessments, multi-step intake workflows, and research reporting across live weekly study sessions. Automated the clinical data ingestion pipeline with Python and Pandas, eliminating manual parsing and saving researchers roughly three months of work per study cycle.",
+      tags: ["Django", "Python", "MySQL", "Pandas", "JavaScript", "Bootstrap"],
     },
     {
       title: "Automated Hardware Test Framework",
-      subtitle: "Infrastructure / automation",
+      subtitle: "North Atlantic Industries · Automation",
       description:
-        "Developed automated testing frameworks for hardware interface modules using Python, pytest, Docker, and Jenkins CI/CD pipelines, reducing manual testing time and improving test coverage across multiple hardware modules.",
+        "Designed automated Python and pytest test frameworks for 7 hardware I/O modules, cutting manual testing time by 50% and enabling 6x greater module throughput. Built Docker-containerized environments and Jenkins CI/CD pipelines to standardize test execution, replacing a decade-old legacy testing library.",
       tags: ["Python", "Pytest", "Docker", "Jenkins", "CI/CD"],
+    },
+    {
+      title: "Swarm Search & Rescue System",
+      subtitle: "Lockheed Martin Sponsored · Robotics",
+      description:
+        "Led a team of 4 engineers on a multi-robot search-and-rescue system using ROS2 and LiDAR-based SLAM. Migrated from ROS2 Foxy to Humble and engineered a map-merge pipeline with slam_toolbox, enabling three robots to merge individual LiDAR maps covering 115+ sq ft into a single coherent environment map — a milestone two prior teams had failed to accomplish.",
+      tags: ["ROS2", "Python", "SLAM", "LiDAR", "Linux"],
     },
   ];
 
   const experiences = [
     {
-      title: "Software Engineer (Full Stack)",
-      org: "Motion Analysis Research Laboratory",
-      time: "Oct 2024 – Present",
+      title: "Software Engineer",
+      org: "Alai Partners",
+      time: "May 2026 – Present",
       detail:
-        "Developing a production-facing clinical data platform with autosave workflows, secure access, reporting, and backend data pipelines.",
+        "Shipping 40+ full-stack features across 3 client-facing platforms with React, Next.js, TypeScript, FastAPI, and PostgreSQL — building document-intelligence and billing-automation systems on Azure with Celery/Redis and Sentry observability.",
     },
     {
-      title: "Software Engineer Automation Intern",
+      title: "Software Engineer",
+      org: "Motion Analysis Research Laboratory",
+      time: "Oct 2024 – May 2026",
+      detail:
+        "Built and maintained a production Django clinical data platform with multi-step intake workflows, research reporting, and an automated data ingestion pipeline that saved researchers months of manual work per study cycle.",
+    },
+    {
+      title: "Software Automation Intern",
       org: "North Atlantic Industries",
       time: "May 2025 – Aug 2025",
       detail:
-        "Built automation frameworks, containerized test environments, and CI workflows for hardware validation.",
-    },
-    {
-      title: "Lead Software Engineer",
-      org: "Capstone Project",
-      time: "Aug 2024 – May 2025",
-      detail:
-        "Led software development for a multi-robot mapping system with LiDAR merging, object detection, and secure web communication.",
+        "Built automated pytest frameworks, Docker-containerized test environments, and Jenkins CI/CD pipelines for hardware validation, halving manual testing time and enabling 6x module throughput.",
     },
   ];
 
@@ -261,17 +338,18 @@ export default function AnthonyKishPortfolio() {
           <section className="min-h-screen flex items-center">
             <div className="w-full">
               <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-10">
-                <p className="mb-5 text-sm uppercase tracking-[0.28em] text-cyan-200/70">Software Engineer</p>
+                <p className="mb-5 text-sm uppercase tracking-[0.28em] text-cyan-200/70">Software Engineer · Alai Partners</p>
                 <h1 className="soft-text text-5xl font-semibold leading-[0.95] sm:text-7xl md:text-8xl">
                   Anthony Kish
                 </h1>
                 <div className="mt-6 flex flex-wrap items-center gap-3 text-xl text-white/78 sm:text-3xl">
-                  <span>Delivering in</span>
+                  <span>Building with</span>
                   <TypingWord words={typingWords} />
                 </div>
                 <p className="muted mt-8 max-w-2xl text-base leading-8 sm:text-lg">
-                  Backend and full-stack software engineer building data-driven web applications, secure workflows,
-                  automation systems, and reliable backend pipelines with a focus on real-world impact.
+                  Full-stack software engineer building AI-assisted platforms and automation pipelines — from React and
+                  Next.js frontends to async FastAPI backends, document-intelligence workflows, and cloud infrastructure
+                  built to scale.
                 </p>
 
                 <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -297,18 +375,19 @@ export default function AnthonyKishPortfolio() {
                 <h2 className="soft-text text-2xl font-medium">About Me</h2>
                 <div className="muted mt-5 space-y-5 text-[1.02rem] leading-8">
                   <p>
-                    I am a software engineer focused on backend and full-stack development, with experience building
-                    production-facing web workflows, database-backed systems, and automation tooling.
+                    I'm a full-stack software engineer at Alai Partners, where I build client-facing platforms that turn
+                    manual, document-heavy workflows into automated, AI-assisted systems — end to end, from React and
+                    Next.js interfaces to async FastAPI services.
                   </p>
                   <p>
-                    My work spans Django applications, MySQL-backed data platforms, Python data processing pipelines,
-                    Dockerized testing environments, and AWS-supported deployments. I care about building software that
-                    feels seamless to use and reliable behind the scenes.
+                    My work centers on shipping reliable production software: document-intelligence pipelines, billing
+                    automation, background processing with Celery and Redis, and cloud infrastructure on Azure. I care as
+                    much about clean, observable backends as I do about interfaces that feel effortless to use.
                   </p>
                   <p>
-                    I am currently completing my M.S. in Computer Engineering at Binghamton University and pursuing
-                    software engineering opportunities, especially in backend, full-stack, and infrastructure-focused
-                    roles.
+                    I hold an M.S. in Computer Engineering from Binghamton University, where I also earned my B.S. through
+                    the 4+1 program. Before industry I led a Lockheed Martin–sponsored robotics team and built automated
+                    hardware-test frameworks — experiences that shaped how I think about systems, testing, and shipping.
                   </p>
                 </div>
               </div>
@@ -317,7 +396,7 @@ export default function AnthonyKishPortfolio() {
                 <div className="relative h-64 w-64">
                   <div className="absolute inset-0 rounded-full bg-cyan-400/20 blur-2xl"></div>
                   <img
-                    src="/images/headshot.png"
+                    src="/images/headshot.jpg"
                     alt="Anthony Kish"
                     className="relative h-64 w-64 rounded-full object-cover border border-cyan-200/20"
                   />
@@ -341,7 +420,7 @@ export default function AnthonyKishPortfolio() {
                         <span className="text-3xl text-cyan-200">
                           {skill.icon}
                         </span>
-                        <span>{skill.name}</span>
+                        <span className="text-center">{skill.name}</span>
                       </div>
                     ))}
                   </div>
@@ -400,10 +479,11 @@ export default function AnthonyKishPortfolio() {
             <div className="section-title">Get In Touch</div>
             <div className="grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
               <div className="glass rounded-[2rem] p-8">
-                <h2 className="soft-text text-2xl font-medium">Let’s build something meaningful.</h2>
+                <h2 className="soft-text text-2xl font-medium">Let's build something meaningful.</h2>
                 <p className="muted mt-5 max-w-2xl text-base leading-8">
-                  I’m actively looking for software engineering opportunities and always open to roles centered on
-                  backend systems, full-stack development, platform engineering, or automation.
+                  I'm always open to connecting with engineers and teams building thoughtful software — whether it's a
+                  collaboration, an interesting problem in full-stack or automation, or just a good conversation. Feel
+                  free to reach out.
                 </p>
               </div>
 
