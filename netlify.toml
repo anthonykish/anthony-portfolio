@@ -1,0 +1,15 @@
+# Netlify build & deploy configuration
+# Used automatically when the site is linked to this Git repo for continuous deployment.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Single-page app fallback: serve index.html for any unknown path.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
